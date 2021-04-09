@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <Resource id="ONE" type="DataSource">
+        JdbcDriver com.mysql.cj.jdbc.Driver
+        JdbcUrl jdbc:mysql://localhost:3306/event
+        UserName root
+        Password 123
+        maxActive 10
+        JtaManaged true
+    </Resource>
+    <Resource id="TWO" type="DataSource">
+        JdbcDriver com.mysql.cj.jdbc.Driver
+        JdbcUrl jdbc:mysql://localhost:3306/event
+        UserName root
+        Password 123
+        maxActive 10
+        JtaManaged false
+    </Resource>
+</resources>

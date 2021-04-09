@@ -1,0 +1,57 @@
+<!--<persistence version="1.0"-->
+<!--             xmlns="http://java.sun.com/xml/ns/persistence"-->
+<!--             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence-->
+<!--       http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">-->
+<!--    &lt;!&ndash;    <persistence-unit name="X" transaction-type="RESOURCE_LOCAL">&ndash;&gt;-->
+<!--&lt;!&ndash;        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>&ndash;&gt;-->
+<!--&lt;!&ndash;        <properties>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.url" value="jdbc:mysql://localhost:3306/payam?useSSL=false"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.user" value="root"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.password" value="123"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="eclipselink.logging.level" value="ALL"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="eclipselink.create-ddl-jdbc-file-name" value="createDDL_ddlGeneration.jdbc"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="eclipselink.drop-ddl-jdbc-file-name" value="dropDDL_ddlGeneration.jdbc"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="eclipselink.ddl-generation.output-mode" value="both"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.show_sql" value="true"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="tomee.jpa.factory.lazy" value="true" />&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="javax.persistence.hbm2ddl.auto" value="create-drop"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </properties>&ndash;&gt;-->
+<!--&lt;!&ndash;    </persistence-unit>&ndash;&gt;-->
+
+<!--    <persistence-unit name="DB_CONNECTION">-->
+<!--        <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+<!--        <jta-data-source>ONE</jta-data-source>-->
+<!--        <non-jta-data-source>TWO</non-jta-data-source>-->
+<!--        <properties>-->
+<!--            <property name="hibernate.show_sql" value="true"/>-->
+<!--            <property name="hibernate.format_sql" value="true"/>-->
+<!--            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>-->
+<!--        </properties>-->
+<!--    </persistence-unit>-->
+<!--</persistence>-->
+
+
+
+
+<persistence version="1.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+       http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+<persistence-unit name="DB_CONNECTION">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>ONE</jta-data-source>
+    <non-jta-data-source>TWO</non-jta-data-source>
+    <properties>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+        <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+    </properties>
+</persistence-unit>
+</persistence>
